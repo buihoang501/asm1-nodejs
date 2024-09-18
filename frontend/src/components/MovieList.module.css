@@ -1,0 +1,132 @@
+/* Movie List Styles */
+.movie-list {
+  background-color: #111;
+  overflow: hidden;
+}
+
+.original-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+/* originals css*/
+.originals {
+  padding: 2.5rem 0 2rem 0;
+  margin: 0 auto;
+
+  width: calc(100% - 5rem);
+  overflow: hidden;
+  display: flex;
+}
+
+.originals::-webkit-scrollbar {
+  height: 0.5rem;
+  background-color: #11171a;
+}
+
+.originals::-webkit-scrollbar-thumb {
+  background-color: #292929;
+}
+
+.originals > div {
+  margin-right: 0.625rem;
+  display: flex;
+  flex: 1;
+  min-width: calc((100% - 5.625rem) / 10);
+  transition: 0.2s;
+}
+
+.originals > div:last-child {
+  margin-right: 0;
+}
+
+/* .originals:hover > div {
+  opacity: 0.6;
+} */
+
+.originals > div > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.originals > div:hover {
+  /* opacity: 1; */
+  transform: scale(1.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+
+/* others css */
+.other {
+  padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+  display: flex;
+  width: calc(100% - 5rem);
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.other > h3 {
+  margin-left: -1.25rem;
+  z-index: 100;
+  color: #fff;
+}
+
+.other > .wrapper::-webkit-scrollbar {
+  height: 0.5rem;
+  background-color: #11171a;
+}
+
+.other > .wrapper::-webkit-scrollbar-thumb {
+  background-color: #292929;
+}
+
+.other .wrapper {
+  padding-bottom: 2rem;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  display: flex;
+}
+
+.other .wrapper > div {
+  margin-right: 0.625rem;
+  display: flex;
+  min-width: calc((100% - 5.625rem) / 10);
+  transition: 0.2s;
+}
+
+.other .wrapper > div:last-child {
+  margin-right: 0;
+}
+
+.other .wrapper > div > img {
+  display: block;
+  width: 100%;
+
+  height: auto;
+  object-fit: cover;
+}
+
+.other .wrapper > div:hover {
+  /* opacity: 1; */
+  transform: scale(1.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: 0.2s;
+}
+
+/*  <laptop  */
+@media (max-width: 62rem) {
+  .originals > div,
+  .other .wrapper > div {
+    min-width: calc((100% - 5.625rem) / 5);
+  }
+}
+
+/*   small mobile  */
+@media (max-width: 36rem) {
+  .originals > div,
+  .other .wrapper > div {
+    min-width: calc((100% - 5.625rem) / 2);
+  }
+}

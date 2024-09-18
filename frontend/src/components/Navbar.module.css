@@ -1,0 +1,47 @@
+/*Navbar Styles*/
+
+.nav-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+}
+
+.nav-bar.color {
+  background-color: #000;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: #fe1900;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.nav-bar > p:first-child {
+  margin-left: 1.25rem;
+}
+.nav-bar > p:last-child {
+  margin-right: 1.25rem;
+}
+
+.nav-bar > p {
+  display: flex;
+  align-items: center;
+}
+
+.form-group {
+  display: flex;
+}
+
+.nav-bar svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+  color: #bab9ba;
+}

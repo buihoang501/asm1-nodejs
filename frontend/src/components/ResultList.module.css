@@ -1,0 +1,65 @@
+/*Search Result Styles*/
+.result-list {
+  padding: 0 1.25rem 2rem 1.25rem;
+}
+
+.result-list > h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.result-container {
+  margin-left: 1.25rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+}
+
+.result-item {
+  width: 11%;
+}
+
+.result-item > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.error {
+  text-align: center;
+  color: red;
+}
+
+/*Responsive*/
+
+/*Laptop and small screen */
+
+@media (min-width: 48.062rem) and (max-width: 64rem) {
+  .result-item {
+    width: 14.28%;
+  }
+}
+
+/* Tablets*/
+@media (min-width: 30.0625rem) and (max-width: 49rem) {
+  .result-item {
+    width: 24.48%;
+  }
+}
+
+/*Mobiles*/
+
+@media (max-width: 30rem) {
+  .result-item {
+    width: calc((100% - 2.5rem) / 2);
+  }
+}

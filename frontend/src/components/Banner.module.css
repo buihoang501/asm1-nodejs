@@ -1,0 +1,87 @@
+/*Banner Styles*/
+
+.banner {
+  width: 100%;
+  position: relative;
+}
+
+.img-container {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.img-container > img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.banner > .info {
+  position: absolute;
+  top: 50%;
+  left: 2.5rem;
+  transform: translateY(-50%);
+}
+
+.info h2 {
+  color: #fff;
+  font-weight: 700;
+  font-size: 2rem;
+  text-shadow: 0 0 0.313rem rgba(0, 0, 0, 0.1);
+}
+.actions button {
+  background-color: #211c20;
+  outline: none;
+  border: none;
+  color: #fff;
+  margin-right: 0.625rem;
+  padding: 0.625rem 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0 0.313rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.313rem;
+}
+
+.info p {
+  width: 36%;
+  text-shadow: 0 0 0.313rem rgba(0, 0, 0, 0.1);
+  font-weight: 600;
+  font-size: 13px;
+  color: #fff;
+}
+
+.error {
+  margin-top: 6.25rem;
+  text-align: center;
+  color: rgb(197, 33, 33);
+}
+
+.loading {
+  margin: 10rem auto 0 auto;
+  line-height: 2.5rem;
+  text-align: center;
+  color: #fff;
+  background-color: #211c20;
+  width: 12.5rem;
+  height: 2.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+@media (max-width: 30.625rem) {
+  .info h2 {
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+  }
+
+  .info p {
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+  }
+
+  .img-container > img {
+    min-height: 500px;
+  }
+}
